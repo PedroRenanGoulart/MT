@@ -40,7 +40,7 @@ def verificasaida(cadeia,Estados,SimbolosTerminais,Simbolos,estadoAceitacao,tran
                 estadoAtual = transicaAtual.get("proximoEstado")
                 if estadoAtual == str(estadoAceitacao):
                     return "aceito"
-                elif contador == 10000:
+                elif contador == 1000000:
                     return "rejeitado"
                 contador += 1
                 # break
